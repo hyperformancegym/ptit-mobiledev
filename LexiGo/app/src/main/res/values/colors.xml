@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ============================================
+         LEXIGO DESIGN SYSTEM - COLOR PALETTE
+         Option B: Deep Navy Blue + Coral
+         ============================================ -->
+
+    <!-- Brand Colors -->
+    <color name="primary">#1E3A5F</color>           <!-- Deep Navy Blue -->
+    <color name="primary_variant">#152A45</color>   <!-- Darker Navy -->
+    <color name="primary_light">#3D5A80</color>     <!-- Lighter Navy -->
+    <color name="secondary">#FF6B6B</color>         <!-- Coral -->
+    <color name="secondary_variant">#EE5A5A</color> <!-- Darker Coral -->
+    <color name="secondary_light">#FF9999</color>   <!-- Lighter Coral (for ripples) -->
+
+    <!-- Semantic Colors -->
+    <color name="success">#2ECC71</color>           <!-- Emerald Green -->
+    <color name="warning">#F39C12</color>           <!-- Sunflower Yellow -->
+    <color name="error">#E74C3C</color>             <!-- Alizarin Red -->
+    <color name="info">#3498DB</color>              <!-- Peter River Blue -->
+
+    <!-- Surface Colors -->
+    <color name="background">#F8F9FA</color>        <!-- Light Gray -->
+    <color name="surface">#FFFFFF</color>           <!-- Pure White -->
+    <color name="surface_variant">#F1F3F4</color>   <!-- Slightly Gray -->
+
+    <!-- On Colors (foreground on corresponding background) -->
+    <color name="on_primary">#FFFFFF</color>
+    <color name="on_secondary">#FFFFFF</color>
+    <color name="on_background">#1A1A2E</color>
+    <color name="on_surface">#1A1A2E</color>
+    <color name="on_error">#FFFFFF</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#1A1A2E</color>      <!-- Near Black -->
+    <color name="text_secondary">#6C757D</color>    <!-- Gray 600 -->
+    <color name="text_disabled">#ADB5BD</color>     <!-- Gray 400 -->
+    <color name="text_hint">#CED4DA</color>         <!-- Gray 300 -->
+
+    <!-- Outline & Divider -->
+    <color name="outline">#DEE2E6</color>
+    <color name="outline_variant">#E9ECEF</color>
+    <color name="divider">#E9ECEF</color>
+
+    <!-- Category Colors (Learning Modules) -->
+    <color name="vocab_primary">#6C5CE7</color>     <!-- Soft Purple -->
+    <color name="vocab_surface">#EDE7FF</color>
+    <color name="vocab_on_surface">#5849BE</color>
+
+    <color name="grammar_primary">#00B894</color>   <!-- Mint Green -->
+    <color name="grammar_surface">#D1FAE5</color>
+    <color name="grammar_on_surface">#059669</color>
+
+    <color name="listening_primary">#FDCB6E</color> <!-- Mustard Yellow -->
+    <color name="listening_surface">#FEF9C3</color>
+    <color name="listening_on_surface">#B45309</color>
+
+    <color name="reading_primary">#0984E3</color>   <!-- Dodger Blue -->
+    <color name="reading_surface">#DBEAFE</color>
+    <color name="reading_on_surface">#1D4ED8</color>
+
+    <color name="dictionary_primary">#E17055</color><!-- Terracotta -->
+    <color name="dictionary_surface">#FEE2E2</color>
+    <color name="dictionary_on_surface">#C0392B</color>
+
+    <!-- Level Colors -->
+    <color name="level_beginner">#2ECC71</color>
+    <color name="level_intermediate">#F39C12</color>
+    <color name="level_advanced">#E74C3C</color>
+
+    <!-- Ripple & State Colors -->
+    <color name="ripple_primary">#331E3A5F</color>  <!-- 20% primary -->
+    <color name="ripple_secondary">#33FF6B6B</color><!-- 20% secondary -->
+    <color name="ripple_light">#1A000000</color>    <!-- 10% black -->
+
+    <!-- Gradient Colors -->
+    <color name="gradient_start">#1E3A5F</color>
+    <color name="gradient_end">#3D5A80</color>
+
+    <!-- Legacy Support (for backward compatibility) -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="accent">@color/secondary</color>
+    <color name="primary_dark">@color/primary_variant</color>
+    <color name="card_background">@color/surface</color>
+    <color name="background_light">@color/surface_variant</color>
+    <color name="gray_light">@color/outline</color>
+    <color name="gray_dark">@color/text_secondary</color>
+
+    <!-- Legacy Category Colors -->
+    <color name="vocab_color">@color/vocab_primary</color>
+    <color name="grammar_color">@color/grammar_primary</color>
+    <color name="listening_color">@color/listening_primary</color>
+    <color name="reading_color">@color/reading_primary</color>
+
+    <!-- Legacy Level Colors -->
+    <color name="beginner_color">@color/level_beginner</color>
+    <color name="intermediate_color">@color/level_intermediate</color>
+    <color name="advanced_color">@color/level_advanced</color>
+
+    <!-- Legacy Progress Colors -->
+    <color name="progress_background">@color/outline</color>
+    <color name="progress_complete">@color/success</color>
+</resources>

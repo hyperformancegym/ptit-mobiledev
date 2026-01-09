@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Button press animation: slight scale down when pressed -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Pressed state - slight scale down -->
+    <item android:state_pressed="true">
+        <set>
+            <objectAnimator
+                android:propertyName="scaleX"
+                android:duration="80"
+                android:valueTo="0.96"
+                android:valueType="floatType"/>
+            <objectAnimator
+                android:propertyName="scaleY"
+                android:duration="80"
+                android:valueTo="0.96"
+                android:valueType="floatType"/>
+        </set>
+    </item>
+    
+    <!-- Default state -->
+    <item>
+        <set>
+            <objectAnimator
+                android:propertyName="scaleX"
+                android:duration="120"
+                android:valueTo="1.0"
+                android:valueType="floatType"
+                android:interpolator="@android:interpolator/overshoot"/>
+            <objectAnimator
+                android:propertyName="scaleY"
+                android:duration="120"
+                android:valueTo="1.0"
+                android:valueType="floatType"
+                android:interpolator="@android:interpolator/overshoot"/>
+        </set>
+    </item>
+    
+</selector>

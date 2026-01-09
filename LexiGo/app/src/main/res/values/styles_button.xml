@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ============================================
+         LEXIGO DESIGN SYSTEM - BUTTON STYLES
+         ============================================ -->
+
+    <!-- Primary Button (Filled) -->
+    <style name="Widget.LexiGo.Button" parent="Widget.Material3.Button">
+        <item name="fontFamily">@font/font_nunito</item>
+        <item name="android:fontFamily">@font/font_nunito</item>
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:minHeight">@dimen/button_height_md</item>
+        <item name="android:paddingStart">@dimen/spacing_lg</item>
+        <item name="android:paddingEnd">@dimen/spacing_lg</item>
+        <item name="cornerRadius">@dimen/radius_md</item>
+        <item name="backgroundTint">@color/primary</item>
+        <item name="android:textColor">@color/on_primary</item>
+        <item name="iconTint">@color/on_primary</item>
+        <item name="iconPadding">@dimen/spacing_sm</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="elevation">@dimen/elevation_sm</item>
+    </style>
+
+    <style name="Widget.LexiGo.Button.Primary" parent="Widget.LexiGo.Button" />
+
+    <!-- Secondary Button -->
+    <style name="Widget.LexiGo.Button.Secondary" parent="Widget.LexiGo.Button">
+        <item name="backgroundTint">@color/secondary</item>
+        <item name="android:textColor">@color/on_secondary</item>
+        <item name="iconTint">@color/on_secondary</item>
+    </style>
+
+    <!-- Outlined Button -->
+    <style name="Widget.LexiGo.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="fontFamily">@font/font_nunito</item>
+        <item name="android:fontFamily">@font/font_nunito</item>
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:minHeight">@dimen/button_height_md</item>
+        <item name="android:paddingStart">@dimen/spacing_lg</item>
+        <item name="android:paddingEnd">@dimen/spacing_lg</item>
+        <item name="cornerRadius">@dimen/radius_md</item>
+        <item name="strokeColor">@color/primary</item>
+        <item name="strokeWidth">1.5dp</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="iconTint">@color/primary</item>
+        <item name="iconPadding">@dimen/spacing_sm</item>
+    </style>
+
+    <!-- Text Button -->
+    <style name="Widget.LexiGo.Button.Text" parent="Widget.Material3.Button.TextButton">
+        <item name="fontFamily">@font/font_nunito</item>
+        <item name="android:fontFamily">@font/font_nunito</item>
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:minHeight">@dimen/button_height_md</item>
+        <item name="cornerRadius">@dimen/radius_md</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="iconTint">@color/primary</item>
+    </style>
+
+    <!-- Tonal Button (Muted primary) -->
+    <style name="Widget.LexiGo.Button.Tonal" parent="Widget.Material3.Button.TonalButton">
+        <item name="fontFamily">@font/font_nunito</item>
+        <item name="android:fontFamily">@font/font_nunito</item>
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:minHeight">@dimen/button_height_md</item>
+        <item name="android:paddingStart">@dimen/spacing_lg</item>
+        <item name="android:paddingEnd">@dimen/spacing_lg</item>
+        <item name="cornerRadius">@dimen/radius_md</item>
+        <item name="backgroundTint">@color/primary_light</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="iconTint">@color/primary</item>
+        <item name="iconPadding">@dimen/spacing_sm</item>
+    </style>
+
+    <!-- Large Button -->
+    <style name="Widget.LexiGo.Button.Large" parent="Widget.LexiGo.Button">
+        <item name="android:minHeight">@dimen/button_height_lg</item>
+        <item name="android:textSize">@dimen/text_body_large</item>
+        <item name="cornerRadius">@dimen/radius_lg</item>
+        <item name="android:paddingStart">@dimen/spacing_xl</item>
+        <item name="android:paddingEnd">@dimen/spacing_xl</item>
+    </style>
+
+    <!-- Small Button -->
+    <style name="Widget.LexiGo.Button.Small" parent="Widget.LexiGo.Button">
+        <item name="android:minHeight">@dimen/button_height_sm</item>
+        <item name="android:textSize">@dimen/text_body_small</item>
+        <item name="android:paddingStart">@dimen/spacing_md</item>
+        <item name="android:paddingEnd">@dimen/spacing_md</item>
+        <item name="cornerRadius">@dimen/radius_sm</item>
+    </style>
+
+    <!-- Icon Button -->
+    <style name="Widget.LexiGo.Button.Icon" parent="Widget.Material3.Button.IconButton">
+        <item name="iconTint">@color/primary</item>
+        <item name="android:minWidth">@dimen/touch_target_min</item>
+        <item name="android:minHeight">@dimen/touch_target_min</item>
+    </style>
+
+    <style name="Widget.LexiGo.Button.Icon.Filled" parent="Widget.Material3.Button.IconButton.Filled">
+        <item name="iconTint">@color/on_primary</item>
+        <item name="backgroundTint">@color/primary</item>
+        <item name="android:minWidth">@dimen/touch_target_min</item>
+        <item name="android:minHeight">@dimen/touch_target_min</item>
+    </style>
+
+    <!-- Danger Button -->
+    <style name="Widget.LexiGo.Button.Danger" parent="Widget.LexiGo.Button">
+        <item name="backgroundTint">@color/error</item>
+        <item name="android:textColor">@color/on_error</item>
+        <item name="iconTint">@color/on_error</item>
+    </style>
+
+    <!-- Success Button -->
+    <style name="Widget.LexiGo.Button.Success" parent="Widget.LexiGo.Button">
+        <item name="backgroundTint">@color/success</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="iconTint">@color/white</item>
+    </style>
+
+    <!-- Warning Button -->
+    <style name="Widget.LexiGo.Button.Warning" parent="Widget.LexiGo.Button">
+        <item name="backgroundTint">@color/warning</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="iconTint">@color/white</item>
+    </style>
+
+    <!-- Full Width Button -->
+    <style name="Widget.LexiGo.Button.FullWidth" parent="Widget.LexiGo.Button">
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="Widget.LexiGo.Button.FullWidth.Large" parent="Widget.LexiGo.Button.Large">
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <!-- FAB Styles -->
+    <style name="Widget.LexiGo.FAB" parent="Widget.Material3.FloatingActionButton.Primary">
+        <item name="backgroundTint">@color/secondary</item>
+        <item name="tint">@color/on_secondary</item>
+        <item name="fabSize">normal</item>
+    </style>
+
+    <style name="Widget.LexiGo.FAB.Small" parent="Widget.LexiGo.FAB">
+        <item name="fabSize">mini</item>
+    </style>
+
+    <style name="Widget.LexiGo.FAB.Extended" parent="Widget.Material3.ExtendedFloatingActionButton.Primary">
+        <item name="backgroundTint">@color/secondary</item>
+        <item name="android:textColor">@color/on_secondary</item>
+        <item name="iconTint">@color/on_secondary</item>
+        <item name="fontFamily">@font/font_nunito</item>
+        <item name="android:fontFamily">@font/font_nunito</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

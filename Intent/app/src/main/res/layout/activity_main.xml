@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/btnShowWeb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Web page" />
+
+    <Button
+        android:id="@+id/btnSendMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send message" />
+
+    <Button
+        android:id="@+id/btnCallSomeone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Call SomeOne" />
+
+    <Button
+        android:id="@+id/btnViewContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Contact" />
+
+    <Button
+        android:id="@+id/btnEditContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Contact" />
+
+    <Button
+        android:id="@+id/btnSendData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Data" />
+</LinearLayout>

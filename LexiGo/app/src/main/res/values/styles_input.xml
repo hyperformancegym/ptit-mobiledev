@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ============================================
+         LEXIGO DESIGN SYSTEM - INPUT STYLES
+         ============================================ -->
+
+    <!-- Outlined TextInput (Default) -->
+    <style name="Widget.LexiGo.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">@dimen/radius_md</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/radius_md</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/radius_md</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/radius_md</item>
+        <item name="boxStrokeColor">@color/input_box_stroke</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+        <item name="hintTextAppearance">@style/TextAppearance.LexiGo.Caption</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="startIconTint">@color/text_secondary</item>
+        <item name="endIconTint">@color/text_secondary</item>
+        <item name="errorTextAppearance">@style/TextAppearance.LexiGo.Error</item>
+        <item name="helperTextTextAppearance">@style/TextAppearance.LexiGo.Caption</item>
+        <item name="counterTextAppearance">@style/TextAppearance.LexiGo.Caption</item>
+    </style>
+
+    <style name="Widget.LexiGo.TextInputLayout.Outlined" parent="Widget.LexiGo.TextInputLayout" />
+
+    <!-- Filled TextInput -->
+    <style name="Widget.LexiGo.TextInputLayout.Filled" parent="Widget.Material3.TextInputLayout.FilledBox">
+        <item name="boxCornerRadiusTopStart">@dimen/radius_md</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/radius_md</item>
+        <item name="boxBackgroundColor">@color/surface_variant</item>
+        <item name="hintTextAppearance">@style/TextAppearance.LexiGo.Caption</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="startIconTint">@color/text_secondary</item>
+        <item name="endIconTint">@color/text_secondary</item>
+    </style>
+
+    <!-- TextInputEditText Style -->
+    <style name="Widget.LexiGo.TextInputEditText" parent="Widget.Material3.TextInputEditText.OutlinedBox">
+        <item name="fontFamily">@font/font_nunito</item>
+        <item name="android:fontFamily">@font/font_nunito</item>
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:minHeight">@dimen/input_height</item>
+    </style>
+
+    <style name="Widget.LexiGo.TextInputEditText.Filled" parent="Widget.Material3.TextInputEditText.FilledBox">
+        <item name="fontFamily">@font/font_nunito</item>
+        <item name="android:fontFamily">@font/font_nunito</item>
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:minHeight">@dimen/input_height</item>
+    </style>
+
+    <!-- Search Input (Rounded) -->
+    <style name="Widget.LexiGo.TextInputLayout.Search" parent="Widget.LexiGo.TextInputLayout">
+        <item name="boxCornerRadiusTopStart">@dimen/radius_full</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/radius_full</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/radius_full</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/radius_full</item>
+        <item name="startIconDrawable">@drawable/ic_search</item>
+        <item name="endIconMode">clear_text</item>
+        <item name="boxBackgroundColor">@color/surface_variant</item>
+        <item name="boxStrokeWidth">0dp</item>
+    </style>
+
+    <!-- Dense Input (smaller height) -->
+    <style name="Widget.LexiGo.TextInputLayout.Dense" parent="Widget.LexiGo.TextInputLayout">
+        <item name="boxCornerRadiusTopStart">@dimen/radius_sm</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/radius_sm</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/radius_sm</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/radius_sm</item>
+    </style>
+
+    <style name="Widget.LexiGo.TextInputEditText.Dense" parent="Widget.LexiGo.TextInputEditText">
+        <item name="android:minHeight">@dimen/input_min_height</item>
+        <item name="android:textSize">@dimen/text_body_small</item>
+    </style>
+
+    <!-- Password Input -->
+    <style name="Widget.LexiGo.TextInputLayout.Password" parent="Widget.LexiGo.TextInputLayout">
+        <item name="endIconMode">password_toggle</item>
+        <item name="startIconDrawable">@drawable/ic_lock</item>
+    </style>
+
+    <!-- Email Input -->
+    <style name="Widget.LexiGo.TextInputLayout.Email" parent="Widget.LexiGo.TextInputLayout">
+        <item name="startIconDrawable">@drawable/ic_email</item>
+    </style>
+
+    <!-- Multiline Input -->
+    <style name="Widget.LexiGo.TextInputLayout.Multiline" parent="Widget.LexiGo.TextInputLayout">
+        <item name="boxCornerRadiusTopStart">@dimen/radius_md</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/radius_md</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/radius_md</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/radius_md</item>
+    </style>
+
+    <style name="Widget.LexiGo.TextInputEditText.Multiline" parent="Widget.LexiGo.TextInputEditText">
+        <item name="android:minHeight">120dp</item>
+        <item name="android:gravity">top|start</item>
+        <item name="android:inputType">textMultiLine</item>
+    </style>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Dark Theme Overrides -->
+    <style name="Base.Theme.LexiGo" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Color overrides for dark mode -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_variant</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="colorPrimaryContainer">@color/primary_light</item>
+        <item name="colorOnPrimaryContainer">@color/on_primary</item>
+
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary_variant</item>
+        <item name="colorOnSecondary">@color/on_secondary</item>
+
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorSurfaceVariant">@color/surface_variant</item>
+        <item name="colorOnBackground">@color/on_background</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
+
+        <item name="colorError">@color/error</item>
+        <item name="colorOnError">@color/on_error</item>
+
+        <item name="colorOutline">@color/outline</item>
+        <item name="colorOutlineVariant">@color/outline_variant</item>
+
+        <item name="colorAccent">@color/secondary</item>
+        <item name="colorPrimaryDark">@color/primary_variant</item>
+
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+
+        <item name="android:fontFamily">@font/font_nunito</item>
+        <item name="fontFamily">@font/font_nunito</item>
+
+        <!-- Text Appearances -->
+        <item name="textAppearanceDisplayLarge">@style/TextAppearance.LexiGo.Display</item>
+        <item name="textAppearanceDisplayMedium">@style/TextAppearance.LexiGo.Display</item>
+        <item name="textAppearanceDisplaySmall">@style/TextAppearance.LexiGo.Display</item>
+        <item name="textAppearanceHeadlineLarge">@style/TextAppearance.LexiGo.Headline</item>
+        <item name="textAppearanceHeadlineMedium">@style/TextAppearance.LexiGo.Headline</item>
+        <item name="textAppearanceHeadlineSmall">@style/TextAppearance.LexiGo.TitleLarge</item>
+        <item name="textAppearanceTitleLarge">@style/TextAppearance.LexiGo.TitleLarge</item>
+        <item name="textAppearanceTitleMedium">@style/TextAppearance.LexiGo.Title</item>
+        <item name="textAppearanceTitleSmall">@style/TextAppearance.LexiGo.TitleSmall</item>
+        <item name="textAppearanceBodyLarge">@style/TextAppearance.LexiGo.BodyLarge</item>
+        <item name="textAppearanceBodyMedium">@style/TextAppearance.LexiGo.Body</item>
+        <item name="textAppearanceBodySmall">@style/TextAppearance.LexiGo.BodySmall</item>
+        <item name="textAppearanceLabelLarge">@style/TextAppearance.LexiGo.Label</item>
+        <item name="textAppearanceLabelMedium">@style/TextAppearance.LexiGo.LabelSmall</item>
+        <item name="textAppearanceLabelSmall">@style/TextAppearance.LexiGo.Caption</item>
+
+        <!-- Default Component Styles -->
+        <item name="materialButtonStyle">@style/Widget.LexiGo.Button</item>
+        <item name="materialCardViewStyle">@style/Widget.LexiGo.Card</item>
+        <item name="textInputStyle">@style/Widget.LexiGo.TextInputLayout</item>
+        <item name="chipStyle">@style/Widget.LexiGo.Chip</item>
+        <item name="toolbarStyle">@style/Widget.LexiGo.Toolbar</item>
+        <item name="tabStyle">@style/Widget.LexiGo.TabLayout</item>
+        <item name="floatingActionButtonStyle">@style/Widget.LexiGo.FAB</item>
+        <item name="bottomNavigationStyle">@style/Widget.LexiGo.BottomNavigation</item>
+
+        <!-- System UI for Dark Mode -->
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:navigationBarColor">@color/surface</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+</resources>

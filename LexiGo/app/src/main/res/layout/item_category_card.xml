@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- New category card layout for home screen grid -->
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.LexiGo.Card.Interactive"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/spacing_sm">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/spacing_md"
+        android:gravity="center_vertical">
+
+        <!-- Icon Container -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/iconContainer"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            app:cardCornerRadius="@dimen/radius_lg"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/primary_light"
+            app:strokeWidth="0dp">
+
+            <ImageView
+                android:id="@+id/ivCategoryIcon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_category_vocab"
+                app:tint="@color/primary"
+                android:contentDescription="@null"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Text Content -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/spacing_md">
+
+            <TextView
+                android:id="@+id/tvCategoryTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.LexiGo.Title"
+                tools:text="Vocabulary"/>
+
+            <TextView
+                android:id="@+id/tvCategoryDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xxs"
+                android:textAppearance="@style/TextAppearance.LexiGo.BodySmall"
+                android:textColor="@color/text_secondary"
+                tools:text="25 lessons • 500 words"/>
+
+            <!-- Progress Bar -->
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/progressCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_sm"
+                app:trackThickness="4dp"
+                app:trackCornerRadius="2dp"
+                app:indicatorColor="@color/primary"
+                app:trackColor="@color/surface_variant"
+                android:progress="30"
+                android:max="100"/>
+
+        </LinearLayout>
+
+        <!-- Arrow -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="@dimen/spacing_sm"
+            android:src="@drawable/ic_arrow_right"
+            app:tint="@color/text_hint"
+            android:contentDescription="@null"/>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

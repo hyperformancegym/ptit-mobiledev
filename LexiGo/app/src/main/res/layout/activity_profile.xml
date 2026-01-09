@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".activities.ProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Profile Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingTop="@dimen/spacing_xl"
+                android:paddingBottom="@dimen/spacing_xxl"
+                android:paddingHorizontal="@dimen/spacing_md"
+                android:background="@drawable/bg_gradient_primary">
+
+                <!-- Avatar -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="@dimen/avatar_xl"
+                    android:layout_height="@dimen/avatar_xl"
+                    app:cardCornerRadius="@dimen/radius_full"
+                    app:cardElevation="@dimen/elevation_lg"
+                    app:strokeWidth="3dp"
+                    app:strokeColor="@color/surface"
+                    app:cardBackgroundColor="@color/surface">
+
+                    <ImageView
+                        android:id="@+id/imgAvatar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_profile"
+                        android:scaleType="centerCrop"
+                        android:padding="@dimen/spacing_lg"
+                        app:tint="@color/primary"
+                        android:contentDescription="@string/profile"/>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- User Name -->
+                <TextView
+                    android:id="@+id/tvUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_md"
+                    android:text="Nguyễn Văn A"
+                    android:textAppearance="@style/TextAppearance.LexiGo.TitleLarge"
+                    android:textColor="@color/on_primary"/>
+
+                <!-- User Email -->
+                <TextView
+                    android:id="@+id/tvUserEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_xs"
+                    android:text="user@example.com"
+                    android:textAppearance="@style/TextAppearance.LexiGo.BodySmall.OnPrimary"
+                    android:alpha="0.9"/>
+
+                <!-- Level Chip -->
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipLevel"
+                    style="@style/Widget.LexiGo.Chip.Intermediate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_sm"
+                    android:text="@string/intermediate"
+                    app:chipIcon="@android:drawable/star_on"/>
+
+            </LinearLayout>
+
+            <!-- Content Area -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/spacing_md"
+                android:paddingBottom="@dimen/spacing_xl"
+                android:clipToPadding="false">
+
+                <!-- Statistics Card -->
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/Widget.LexiGo.Card.Hero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_lg">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/spacing_lg">
+
+                        <!-- Header -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/icon_size_md"
+                                android:layout_height="@dimen/icon_size_md"
+                                android:src="@android:drawable/ic_menu_sort_by_size"
+                                app:tint="@color/primary"
+                                android:layout_marginEnd="@dimen/spacing_sm"
+                                android:contentDescription="@null"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/statistics"
+                                android:textAppearance="@style/TextAppearance.LexiGo.TitleSmall"/>
+                        </LinearLayout>
+
+                        <!-- Stats Content -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/spacing_md">
+
+                            <!-- Lessons Learned -->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/tvLessonsCount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:textAppearance="@style/TextAppearance.LexiGo.Headline"
+                                    android:textColor="@color/primary"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/lessons_learned"
+                                    android:textAppearance="@style/TextAppearance.LexiGo.Caption"/>
+
+                            </LinearLayout>
+
+                            <!-- Divider -->
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/divider"/>
+
+                            <!-- Daily Goal -->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/tvDailyGoal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0/0"
+                                    android:textAppearance="@style/TextAppearance.LexiGo.Headline"
+                                    android:textColor="@color/secondary"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/daily_target"
+                                    android:textAppearance="@style/TextAppearance.LexiGo.Caption"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <!-- Legacy TextViews (hidden for backward compat) -->
+                        <TextView
+                            android:id="@+id/tvLessonsStatistics"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:text="Đã học: 0"/>
+
+                        <TextView
+                            android:id="@+id/tvDailyGoalStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:text="Tiến độ ngày: 0/0 bài"/>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Account Settings Section -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/account_settings"
+                    android:textAppearance="@style/TextAppearance.LexiGo.Label"
+                    android:layout_marginBottom="@dimen/spacing_sm"
+                    android:layout_marginStart="@dimen/spacing_xs"/>
+
+                <!-- Update Profile Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnUpdateProfile"
+                    style="@style/Widget.LexiGo.Button.Outlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_sm"
+                    android:text="@string/update_profile"
+                    android:textAlignment="textStart"
+                    app:icon="@android:drawable/ic_menu_edit"
+                    app:iconGravity="textStart"/>
+
+                <!-- Change Password Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnChangePassword"
+                    style="@style/Widget.LexiGo.Button.Outlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_sm"
+                    android:text="@string/change_password"
+                    android:textAlignment="textStart"
+                    app:icon="@drawable/ic_lock"
+                    app:iconGravity="textStart"/>
+
+                <!-- Detailed Stats Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnDetailedStats"
+                    style="@style/Widget.LexiGo.Button.Outlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_lg"
+                    android:text="@string/view_detailed_stats"
+                    android:textAlignment="textStart"
+                    app:icon="@android:drawable/ic_menu_view"
+                    app:iconGravity="textStart"/>
+
+                <!-- Logout Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnLogout"
+                    style="@style/Widget.LexiGo.Button.Danger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/logout"
+                    app:icon="@android:drawable/ic_lock_power_off"
+                    app:iconGravity="textStart"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Loading Indicator -->
+    <ProgressBar
+        android:id="@+id/loadingIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:elevation="@dimen/elevation_xl"
+        android:indeterminateTint="@color/primary"/>
+
+</FrameLayout>

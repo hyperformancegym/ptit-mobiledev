@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ============================================
+         LEXIGO DESIGN SYSTEM - TOOLBAR STYLES
+         ============================================ -->
+
+    <!-- Primary Toolbar (Dark background) -->
+    <style name="Widget.LexiGo.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/primary</item>
+        <item name="titleTextColor">@color/on_primary</item>
+        <item name="subtitleTextColor">@color/on_primary</item>
+        <item name="navigationIconTint">@color/on_primary</item>
+        <item name="titleTextAppearance">@style/TextAppearance.LexiGo.TitleSmall</item>
+        <item name="subtitleTextAppearance">@style/TextAppearance.LexiGo.BodySmall.OnPrimary</item>
+        <item name="android:minHeight">@dimen/toolbar_height</item>
+        <item name="android:elevation">@dimen/elevation_md</item>
+    </style>
+
+    <style name="Widget.LexiGo.Toolbar.Primary" parent="Widget.LexiGo.Toolbar" />
+
+    <!-- Surface Toolbar (Light background) -->
+    <style name="Widget.LexiGo.Toolbar.Surface" parent="Widget.LexiGo.Toolbar">
+        <item name="android:background">@color/surface</item>
+        <item name="titleTextColor">@color/text_primary</item>
+        <item name="subtitleTextColor">@color/text_secondary</item>
+        <item name="navigationIconTint">@color/text_primary</item>
+        <item name="subtitleTextAppearance">@style/TextAppearance.LexiGo.BodySmall</item>
+    </style>
+
+    <!-- Transparent Toolbar -->
+    <style name="Widget.LexiGo.Toolbar.Transparent" parent="Widget.LexiGo.Toolbar">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    <!-- Collapsing Toolbar -->
+    <style name="Widget.LexiGo.CollapsingToolbar" parent="Widget.Material3.CollapsingToolbar">
+        <item name="contentScrim">@color/primary</item>
+        <item name="expandedTitleTextAppearance">@style/TextAppearance.LexiGo.Headline</item>
+        <item name="collapsedTitleTextAppearance">@style/TextAppearance.LexiGo.TitleSmall</item>
+        <item name="expandedTitleTextColor">@color/on_primary</item>
+        <item name="collapsedTitleTextColor">@color/on_primary</item>
+    </style>
+
+    <!-- ============================================
+         APP BAR LAYOUT STYLES
+         ============================================ -->
+
+    <style name="Widget.LexiGo.AppBarLayout" parent="Widget.Material3.AppBarLayout">
+        <item name="android:background">@color/primary</item>
+        <item name="elevation">@dimen/elevation_md</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <style name="Widget.LexiGo.AppBarLayout.Surface" parent="Widget.LexiGo.AppBarLayout">
+        <item name="android:background">@color/surface</item>
+    </style>
+
+    <!-- ============================================
+         BOTTOM NAVIGATION STYLES
+         ============================================ -->
+
+    <style name="Widget.LexiGo.BottomNavigation" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">@color/surface</item>
+        <item name="itemIconTint">@color/bottom_nav_icon_color</item>
+        <item name="itemTextColor">@color/bottom_nav_icon_color</item>
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="itemTextAppearanceActive">@style/TextAppearance.LexiGo.LabelSmall</item>
+        <item name="itemTextAppearanceInactive">@style/TextAppearance.LexiGo.Caption</item>
+        <item name="elevation">@dimen/elevation_lg</item>
+    </style>
+
+    <!-- ============================================
+         TAB LAYOUT STYLES
+         ============================================ -->
+
+    <style name="Widget.LexiGo.TabLayout" parent="Widget.Material3.TabLayout">
+        <item name="android:background">@color/surface</item>
+        <item name="tabIndicatorColor">@color/primary</item>
+        <item name="tabSelectedTextColor">@color/primary</item>
+        <item name="tabTextColor">@color/text_secondary</item>
+        <item name="tabIndicatorHeight">3dp</item>
+        <item name="tabMode">fixed</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabTextAppearance">@style/TextAppearance.LexiGo.Label</item>
+    </style>
+
+    <style name="Widget.LexiGo.TabLayout.Primary" parent="Widget.LexiGo.TabLayout">
+        <item name="android:background">@color/primary</item>
+        <item name="tabIndicatorColor">@color/on_primary</item>
+        <item name="tabSelectedTextColor">@color/on_primary</item>
+        <item name="tabTextColor">@color/primary_light</item>
+    </style>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Custom ripple effect with secondary/coral color -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/secondary_light">
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/white"/>
+            <corners android:radius="@dimen/radius_md"/>
+        </shape>
+    </item>
+</ripple>

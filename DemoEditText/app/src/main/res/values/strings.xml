@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DemoEditText</string>
+    <string name="test_hint">Vui lòng nhập tùm lum</string>
+    <string name="test_button">Click vô đây</string>
+</resources>

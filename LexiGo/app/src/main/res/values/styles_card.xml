@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ============================================
+         LEXIGO DESIGN SYSTEM - CARD STYLES
+         ============================================ -->
+
+    <!-- Elevated Card (default) -->
+    <style name="Widget.LexiGo.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/surface</item>
+        <item name="cardCornerRadius">@dimen/radius_lg</item>
+        <item name="cardElevation">@dimen/elevation_md</item>
+        <item name="contentPadding">@dimen/spacing_md</item>
+        <item name="android:layout_marginHorizontal">@dimen/spacing_sm</item>
+        <item name="android:layout_marginVertical">@dimen/spacing_sm</item>
+    </style>
+
+    <!-- Outlined Card -->
+    <style name="Widget.LexiGo.Card.Outlined" parent="Widget.Material3.CardView.Outlined">
+        <item name="cardBackgroundColor">@color/surface</item>
+        <item name="cardCornerRadius">@dimen/radius_lg</item>
+        <item name="strokeColor">@color/outline</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cardElevation">@dimen/elevation_none</item>
+        <item name="contentPadding">@dimen/spacing_md</item>
+    </style>
+
+    <!-- Filled Card -->
+    <style name="Widget.LexiGo.Card.Filled" parent="Widget.Material3.CardView.Filled">
+        <item name="cardBackgroundColor">@color/surface_variant</item>
+        <item name="cardCornerRadius">@dimen/radius_lg</item>
+        <item name="cardElevation">@dimen/elevation_none</item>
+        <item name="contentPadding">@dimen/spacing_md</item>
+    </style>
+
+    <!-- Interactive Card (clickable) -->
+    <style name="Widget.LexiGo.Card.Interactive" parent="Widget.LexiGo.Card">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="rippleColor">@color/ripple_primary</item>
+    </style>
+
+    <!-- Compact Card (less padding) -->
+    <style name="Widget.LexiGo.Card.Compact" parent="Widget.LexiGo.Card">
+        <item name="contentPadding">@dimen/spacing_sm</item>
+        <item name="cardCornerRadius">@dimen/radius_md</item>
+    </style>
+
+    <!-- Hero Card (larger, more prominent) -->
+    <style name="Widget.LexiGo.Card.Hero" parent="Widget.LexiGo.Card">
+        <item name="cardElevation">@dimen/elevation_lg</item>
+        <item name="cardCornerRadius">@dimen/radius_xl</item>
+        <item name="contentPadding">@dimen/spacing_lg</item>
+    </style>
+
+    <!-- ============================================
+         CATEGORY CARDS (Color-coded)
+         ============================================ -->
+
+    <!-- Vocabulary Card -->
+    <style name="Widget.LexiGo.Card.Vocab" parent="Widget.LexiGo.Card.Interactive">
+        <item name="cardBackgroundColor">@color/vocab_surface</item>
+        <item name="strokeColor">@color/vocab_primary</item>
+        <item name="strokeWidth">0dp</item>
+    </style>
+
+    <!-- Grammar Card -->
+    <style name="Widget.LexiGo.Card.Grammar" parent="Widget.LexiGo.Card.Interactive">
+        <item name="cardBackgroundColor">@color/grammar_surface</item>
+        <item name="strokeColor">@color/grammar_primary</item>
+        <item name="strokeWidth">0dp</item>
+    </style>
+
+    <!-- Listening Card -->
+    <style name="Widget.LexiGo.Card.Listening" parent="Widget.LexiGo.Card.Interactive">
+        <item name="cardBackgroundColor">@color/listening_surface</item>
+        <item name="strokeColor">@color/listening_primary</item>
+        <item name="strokeWidth">0dp</item>
+    </style>
+
+    <!-- Reading Card -->
+    <style name="Widget.LexiGo.Card.Reading" parent="Widget.LexiGo.Card.Interactive">
+        <item name="cardBackgroundColor">@color/reading_surface</item>
+        <item name="strokeColor">@color/reading_primary</item>
+        <item name="strokeWidth">0dp</item>
+    </style>
+
+    <!-- Dictionary Card -->
+    <style name="Widget.LexiGo.Card.Dictionary" parent="Widget.LexiGo.Card.Interactive">
+        <item name="cardBackgroundColor">@color/dictionary_surface</item>
+        <item name="strokeColor">@color/dictionary_primary</item>
+        <item name="strokeWidth">0dp</item>
+    </style>
+
+    <!-- ============================================
+         SEMANTIC CARDS
+         ============================================ -->
+
+    <!-- Success Card -->
+    <style name="Widget.LexiGo.Card.Success" parent="Widget.LexiGo.Card">
+        <item name="cardBackgroundColor">#D4EDDA</item>
+        <item name="strokeColor">@color/success</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cardElevation">@dimen/elevation_none</item>
+    </style>
+
+    <!-- Error Card -->
+    <style name="Widget.LexiGo.Card.Error" parent="Widget.LexiGo.Card">
+        <item name="cardBackgroundColor">#F8D7DA</item>
+        <item name="strokeColor">@color/error</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cardElevation">@dimen/elevation_none</item>
+    </style>
+
+    <!-- Warning Card -->
+    <style name="Widget.LexiGo.Card.Warning" parent="Widget.LexiGo.Card">
+        <item name="cardBackgroundColor">#FFF3CD</item>
+        <item name="strokeColor">@color/warning</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cardElevation">@dimen/elevation_none</item>
+    </style>
+
+    <!-- Info Card -->
+    <style name="Widget.LexiGo.Card.Info" parent="Widget.LexiGo.Card">
+        <item name="cardBackgroundColor">#D1ECF1</item>
+        <item name="strokeColor">@color/info</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cardElevation">@dimen/elevation_none</item>
+    </style>
+
+    <!-- ============================================
+         SPECIAL CARDS
+         ============================================ -->
+
+    <!-- Bottom Sheet Card -->
+    <style name="Widget.LexiGo.Card.BottomSheet" parent="Widget.LexiGo.Card">
+        <item name="cardElevation">@dimen/elevation_xl</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.LexiGo.TopRounded</item>
+    </style>
+
+    <!-- Dialog Card -->
+    <style name="Widget.LexiGo.Card.Dialog" parent="Widget.LexiGo.Card">
+        <item name="cardElevation">@dimen/elevation_xl</item>
+        <item name="cardCornerRadius">@dimen/radius_xl</item>
+        <item name="contentPadding">@dimen/spacing_lg</item>
+    </style>
+</resources>

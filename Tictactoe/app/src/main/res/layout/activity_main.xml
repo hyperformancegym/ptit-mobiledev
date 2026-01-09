@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="93dp"
+        android:layout_marginLeft="5pt"
+        tools:ignore="MissingConstraints">
+
+        <TableRow
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <Button
+                android:id="@+id/bt1"
+                android:textSize="50dp"
+                android:layout_margin="3pt"
+                android:onClick="btClick"
+                android:layout_width="50pt"
+                android:layout_height="50pt"
+                tools:ignore="OnClick"
+                android:backgroundTint="#BCB9B9"/>
+
+            <Button
+                android:id="@+id/bt2"
+                android:textSize="50dp"
+                android:layout_margin="3pt"
+                android:onClick="btClick"
+                android:layout_width="50pt"
+                android:layout_height="50pt"
+                tools:ignore="OnClick"
+                android:backgroundTint="#BCB9B9"/>
+            <Button
+                android:id="@+id/bt3"
+                android:textSize="50dp"
+                android:layout_margin="3pt"
+                android:onClick="btClick"
+                android:layout_width="50pt"
+                android:layout_height="50pt"
+                tools:ignore="OnClick"
+                android:backgroundTint="#BCB9B9"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/bt4"
+                android:textSize="50dp"
+                android:layout_margin="3pt"
+                android:onClick="btClick"
+                android:layout_width="50pt"
+                android:layout_height="50pt"
+                tools:ignore="OnClick"
+                android:backgroundTint="#BCB9B9"/>
+
+            <Button
+                android:id="@+id/bt5"
+                android:textSize="50dp"
+                android:layout_margin="3pt"
+                android:onClick="btClick"
+                android:layout_width="50pt"
+                android:layout_height="50pt"
+                android:backgroundTint="#BCB9B9"/>
+
+            <Button
+                android:id="@+id/bt6"
+                android:textSize="50dp"
+                android:layout_margin="3pt"
+                android:onClick="btClick"
+                android:layout_width="50pt"
+                android:layout_height="50pt"
+                android:backgroundTint="#BCB9B9"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/bt7"
+                android:textSize="50dp"
+                android:layout_margin="3pt"
+                android:onClick="btClick"
+                android:layout_width="50pt"
+                android:layout_height="50pt"
+                android:backgroundTint="#BCB9B9"/>
+
+
+            <Button
+                android:id="@+id/bt8"
+                android:textSize="50dp"
+                android:layout_margin="3pt"
+                android:onClick="btClick"
+                android:layout_width="50pt"
+                android:layout_height="50pt"
+                android:backgroundTint="#BCB9B9"/>
+
+
+            <Button
+                android:id="@+id/bt9"
+                android:textSize="50dp"
+                android:layout_margin="3pt"
+                android:onClick="btClick"
+                android:layout_width="50pt"
+                android:layout_height="50pt"
+                android:backgroundTint="#BCB9B9"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_span="3"
+            android:gravity="center"
+            android:layout_margin="5pt">
+            <Button
+                android:id="@+id/btnStart"
+                android:text="Bắt đầu"
+                android:padding="5pt">
+            </Button>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5pt">
+            <TextView
+                android:layout_span="3"
+                android:id="@+id/showResult"
+                android:textSize="30sp"
+                android:layout_width="match_parent"
+                android:text="AA"
+                android:gravity="center"
+                android:visibility="invisible">
+            </TextView>
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

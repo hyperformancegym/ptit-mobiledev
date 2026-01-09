@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyReview</string>
+    <string name="hint">nhap di</string>
+    <string name="button_text">Click de</string>
+</resources>

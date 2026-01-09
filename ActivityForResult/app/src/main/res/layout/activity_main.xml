@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        tools:context=".MainActivity" >
+        <TextView
+            android:id="@+id/txtTittleTop"
+            android:layout_width="match_parent"
+
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:background="#FFE4AE"
+            android:text="Tittle Top" />
+        <Button
+            android:id="@+id/btnChangeTop"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#D7C8E8"
+            app:backgroundTint="@null"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:text="Change Top" />
+        <Button
+            android:id="@+id/btnChangeBottom"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="#D7C8E8"
+            android:text="Change Bottom"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:backgroundTint="@null" />
+        <TextView
+            android:id="@+id/txtTittleBottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:background="#FFE4AE"
+            android:text="Tittle Bottom" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

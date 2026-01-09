@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#F5F5F5"
+
+    android:clipToPadding="false"
+    android:paddingBottom="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_header" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardImageContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-20dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/ivPassageImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@android:drawable/ic_menu_gallery"
+                    tools:src="@drawable/ic_category_reading" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+
+                android:layout_marginHorizontal="4dp"
+
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="@android:color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/tvPassageLevel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Intermediate"
+                        android:textColor="@color/white"
+                        app:chipBackgroundColor="@color/primary"
+                        app:chipCornerRadius="4dp"
+                        android:layout_marginBottom="12dp"
+                        style="@style/Widget.MaterialComponents.Chip.Action"/>
+
+                    <TextView
+                        android:id="@+id/tvPassageTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="26sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="16dp"
+                        tools:text="The Great Adventure" />
+
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="4dp"
+                        android:background="@color/primary"
+                        android:layout_marginBottom="24dp"/>
+
+                    <TextView
+                        android:id="@+id/tvPassageContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+
+                        android:lineSpacingExtra="8dp"
+                        android:fontFamily="serif"
+                        android:textColor="#333333"
+                        tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnStartQuiz"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Bắt đầu làm bài"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:cornerRadius="30dp"
+                app:icon="@android:drawable/ic_media_play"
+                app:iconGravity="textStart"
+
+                android:elevation="6dp"
+                android:stateListAnimator="@null"
+                app:backgroundTint="@color/primary"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

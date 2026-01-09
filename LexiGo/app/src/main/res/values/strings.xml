@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">LexiGo</string>
+
+    <!-- Home Activity -->
+    <string name="account">Tài khoản</string>
+    <string name="vocabulary">Học từ vựng</string>
+    <string name="grammar">Ngữ pháp</string>
+    <string name="listening">Luyện nghe</string>
+    <string name="reading">Luyện đọc</string>
+    <string name="progress_title">Tiến độ học tập</string>
+    <string name="lessons_completed">Hoàn thành: %d</string>
+    <string name="daily_goal">Mục tiêu: %1$d/%2$d bài</string>
+    <string name="dictionary">Từ điển</string>
+    <string name="daily_progress">Tiến độ ngày: %1$d/%2$d bài</string>
+    <string name="daily_goal_reached">Đã đạt mục tiêu ngày: %1$d/%2$d bài</string>
+    <string name="no_daily_goal_set">Chưa đặt mục tiêu ngày</string>
+    <string name="lessons_learned">Đã học</string>
+    <string name="daily_target">Mục tiêu ngày</string>
+    <string name="learning_categories">Danh mục học tập</string>
+    <string name="chat_ai">Chat AI</string>
+
+    <!-- Auth Activity -->
+    <string name="login">Đăng nhập</string>
+    <string name="register">Đăng ký</string>
+    <string name="email">Email</string>
+    <string name="password">Mật khẩu</string>
+    <string name="full_name">Họ và tên</string>
+    <string name="confirm_password">Xác nhận mật khẩu</string>
+    <string name="forgot_password">Quên mật khẩu?</string>
+    <string name="login_button">ĐĂNG NHẬP</string>
+    <string name="register_button">ĐĂNG KÝ</string>
+    <string name="email_hint">Nhập email của bạn</string>
+    <string name="password_hint">Nhập mật khẩu</string>
+    <string name="full_name_hint">Nhập họ và tên</string>
+    <string name="welcome_back">Chào mừng trở lại!</string>
+    <string name="create_account">Tạo tài khoản mới</string>
+    <string name="login_subtitle">Vui lòng đăng nhập để tiếp tục</string>
+    <string name="register_subtitle">Điền thông tin để bắt đầu hành trình học tập</string>
+
+    <!-- Profile Activity -->
+    <string name="profile">Thông tin cá nhân</string>
+    <string name="level">Cấp độ</string>
+    <string name="beginner">Beginner</string>
+    <string name="intermediate">Intermediate</string>
+    <string name="advanced">Advanced</string>
+    <string name="update_profile">Cập nhật thông tin</string>
+    <string name="set_goal">Đặt mục tiêu học tập</string>
+    <string name="statistics">Thống kê tiến độ</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="lessons_statistics">Số bài đã học: %d</string>
+    <string name="total_lessons">Tổng số bài: %d</string>
+    <string name="account_settings">Cài đặt tài khoản</string>
+    <string name="change_password">Thay đổi mật khẩu</string>
+    <string name="view_detailed_stats">Xem thống kê chi tiết</string>
+
+    <!-- Common -->
+    <string name="welcome">Chào mừng đến với LexiGo</string>
+    <string name="description">Ứng dụng học tiếng Anh hiệu quả</string>
+    <string name="search">Tra cứu</string>
+    <string name="error">Lỗi</string>
+    <string name="send">Gửi</string>
+
+    <!-- Dictionary -->
+    <string name="search_dictionary_title">Tra cứu từ điển Anh - Việt</string>
+    <string name="search_word_hint">Nhập từ tiếng Anh cần tra...</string>
+    <string name="empty_search_hint">Nhập từ để bắt đầu tra cứu</string>
+    <string name="word_not_found">Không tìm thấy từ này</string>
+    <string name="translation_label">Bản dịch:</string>
+    <string name="definitions_label">Định nghĩa:</string>
+    <string name="examples_label">Ví dụ:</string>
+    <string name="synonyms_label">Từ đồng nghĩa:</string>
+
+    <!-- Chat -->
+    <string name="type_message_hint">Nhập tin nhắn...</string>
+
+    <!-- Auth - New -->
+    <string name="tagline">Học tiếng Anh mỗi ngày</string>
+    <string name="or_continue_with">hoặc tiếp tục với</string>
+    <string name="agree_terms">Tôi đồng ý với Điều khoản sử dụng và Chính sách bảo mật</string>
+
+    <!-- Home - Gamification -->
+    <string name="greeting_morning">Chào buổi sáng,</string>
+    <string name="greeting_afternoon">Chào buổi chiều,</string>
+    <string name="greeting_evening">Chào buổi tối,</string>
+    <string name="streak_days">ngày liên tiếp</string>
+    <string name="total_xp">điểm XP</string>
+    <string name="daily_goal_title">Mục tiêu hôm nay</string>
+    <string name="motivation_start">Hãy bắt đầu học ngay!</string>
+    <string name="motivation_progress">Tuyệt vời! Tiếp tục nhé!</string>
+    <string name="motivation_done">Xuất sắc! Bạn đã hoàn thành!</string>
+    <string name="continue_learning">Tiếp tục học</string>
+    <string name="quick_actions">Truy cập nhanh</string>
+
+</resources>

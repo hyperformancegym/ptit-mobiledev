@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <!-- App Bar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.LexiGo.AppBarLayout">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/Widget.LexiGo.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            app:title="@string/reading"
+            app:navigationIcon="@drawable/ic_back"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Content -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <!-- RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvReadingPassages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/spacing_sm"
+            android:clipToPadding="false"
+            android:scrollbars="vertical"
+            android:layoutAnimation="@anim/layout_animation_fall_down"
+            tools:listitem="@layout/item_reading_passage"/>
+
+        <!-- Loading Indicator -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:indeterminateTint="@color/reading_primary"
+            android:elevation="@dimen/elevation_xl"/>
+
+    </FrameLayout>
+
+    <!-- Bottom Pagination Card -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:cardElevation="@dimen/elevation_xl"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.LexiGo.TopRounded"
+        app:cardBackgroundColor="@color/surface">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="@dimen/spacing_md"
+            android:paddingHorizontal="@dimen/spacing_lg"
+            android:gravity="center_vertical">
+
+            <!-- Previous Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPreviousPage"
+                style="@style/Widget.LexiGo.Button.Outlined"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trước"
+                android:enabled="false"
+                app:icon="@android:drawable/ic_media_previous"
+                app:iconGravity="textStart"/>
+
+            <!-- Page Info -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/tvPageInfo"
+                    style="@style/Widget.LexiGo.Chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 / 5"
+                    app:chipBackgroundColor="@color/reading_surface"
+                    android:textColor="@color/reading_primary"/>
+
+            </LinearLayout>
+
+            <!-- Next Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnNextPage"
+                style="@style/Widget.LexiGo.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sau"
+                app:backgroundTint="@color/reading_primary"
+                app:icon="@android:drawable/ic_media_next"
+                app:iconGravity="textEnd"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

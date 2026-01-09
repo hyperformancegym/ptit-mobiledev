@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".FragmentTab3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/profile_background_blue"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/avt"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/circle_shape"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/lau"
+            tools:src="@tools:sample/avatars" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/profile_details_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROFILE DETAILS"
+            android:textColor="@color/profile_details_red"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Username Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="@color/label_text_grey"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/user_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:inputType="text"
+            android:backgroundTint="@color/underline_tint_color"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Email Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="@color/label_text_grey"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/email_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:inputType="textEmailAddress"
+            android:backgroundTint="@color/underline_tint_color"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Old Password Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Old Password"
+            android:textColor="@color/label_text_grey"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/old_password_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:backgroundTint="@color/underline_tint_color"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

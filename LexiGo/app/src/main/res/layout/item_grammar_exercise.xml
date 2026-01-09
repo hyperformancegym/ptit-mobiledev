@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="8dp"
+
+    app:cardElevation="6dp"
+    app:cardCornerRadius="12dp"
+    app:strokeColor="#E0E0E0"
+    app:strokeWidth="1dp"
+    app:cardBackgroundColor="@android:color/white"
+
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="4dp"
+                app:cardBackgroundColor="#E3F2FD"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:id="@+id/tv_exercise_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Multiple Choice"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp"
+                    android:textAllCaps="true"/>
+            </com.google.android.material.card.MaterialCardView>
+
+            <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tv_difficulty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#F57C00"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_exercise_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:lineSpacingExtra="4dp"
+            android:text="Which word implies 'happy'?"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/tv_options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:lineSpacingExtra="4dp"
+            android:background="#FAFAFA"
+            android:padding="12dp"
+            android:text="A. Sad\nB. Joyful\nC. Angry"
+            android:layout_marginBottom="12dp"/>
+
+        <LinearLayout
+            android:id="@+id/layout_answer_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:background="@drawable/bg_answer_rounded"
+            android:padding="12dp"
+            android:layout_marginTop="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@android:drawable/checkbox_on_background"
+                    app:tint="#2E7D32"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/tv_correct_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Answer: B. Joyful"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#2E7D32"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_explanation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Joyful means feeling, expressing, or causing great pleasure and happiness."
+                android:textSize="14sp"
+                android:textColor="#1B5E20"
+                android:lineSpacingExtra="2dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_hint_tap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:alpha="0.6">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@android:drawable/ic_menu_view"
+                app:tint="@android:color/darker_gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginStart="4dp"
+                android:text="Chạm để xem đáp án"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

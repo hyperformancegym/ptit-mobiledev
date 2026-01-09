@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- ============================================
+         LEXIGO THEME - MAIN APPLICATION THEME
+         ============================================ -->
+
+    <style name="Base.Theme.LexiGo" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- ========== COLOR SYSTEM ========== -->
+        <!-- Primary Colors -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_variant</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="colorPrimaryContainer">@color/primary_light</item>
+        <item name="colorOnPrimaryContainer">@color/primary_variant</item>
+
+        <!-- Secondary Colors -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary_variant</item>
+        <item name="colorOnSecondary">@color/on_secondary</item>
+        <item name="colorSecondaryContainer">@color/secondary</item>
+        <item name="colorOnSecondaryContainer">@color/on_secondary</item>
+
+        <!-- Background & Surface -->
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorSurfaceVariant">@color/surface_variant</item>
+        <item name="colorOnBackground">@color/on_background</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
+
+        <!-- Error Colors -->
+        <item name="colorError">@color/error</item>
+        <item name="colorOnError">@color/on_error</item>
+
+        <!-- Outline -->
+        <item name="colorOutline">@color/outline</item>
+        <item name="colorOutlineVariant">@color/outline_variant</item>
+
+        <!-- Legacy Support -->
+        <item name="colorAccent">@color/secondary</item>
+        <item name="colorPrimaryDark">@color/primary_variant</item>
+
+        <!-- ========== TEXT COLORS ========== -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+
+        <!-- ========== TYPOGRAPHY ========== -->
+        <item name="android:fontFamily">@font/font_nunito</item>
+        <item name="fontFamily">@font/font_nunito</item>
+
+        <!-- Text Appearances -->
+        <item name="textAppearanceDisplayLarge">@style/TextAppearance.LexiGo.Display</item>
+        <item name="textAppearanceDisplayMedium">@style/TextAppearance.LexiGo.Display</item>
+        <item name="textAppearanceDisplaySmall">@style/TextAppearance.LexiGo.Display</item>
+        <item name="textAppearanceHeadlineLarge">@style/TextAppearance.LexiGo.Headline</item>
+        <item name="textAppearanceHeadlineMedium">@style/TextAppearance.LexiGo.Headline</item>
+        <item name="textAppearanceHeadlineSmall">@style/TextAppearance.LexiGo.TitleLarge</item>
+        <item name="textAppearanceTitleLarge">@style/TextAppearance.LexiGo.TitleLarge</item>
+        <item name="textAppearanceTitleMedium">@style/TextAppearance.LexiGo.Title</item>
+        <item name="textAppearanceTitleSmall">@style/TextAppearance.LexiGo.TitleSmall</item>
+        <item name="textAppearanceBodyLarge">@style/TextAppearance.LexiGo.BodyLarge</item>
+        <item name="textAppearanceBodyMedium">@style/TextAppearance.LexiGo.Body</item>
+        <item name="textAppearanceBodySmall">@style/TextAppearance.LexiGo.BodySmall</item>
+        <item name="textAppearanceLabelLarge">@style/TextAppearance.LexiGo.Label</item>
+        <item name="textAppearanceLabelMedium">@style/TextAppearance.LexiGo.LabelSmall</item>
+        <item name="textAppearanceLabelSmall">@style/TextAppearance.LexiGo.Caption</item>
+
+        <!-- ========== DEFAULT COMPONENT STYLES ========== -->
+        <item name="materialButtonStyle">@style/Widget.LexiGo.Button</item>
+        <item name="materialCardViewStyle">@style/Widget.LexiGo.Card</item>
+        <item name="textInputStyle">@style/Widget.LexiGo.TextInputLayout</item>
+        <item name="chipStyle">@style/Widget.LexiGo.Chip</item>
+        <item name="toolbarStyle">@style/Widget.LexiGo.Toolbar</item>
+        <item name="tabStyle">@style/Widget.LexiGo.TabLayout</item>
+        <item name="floatingActionButtonStyle">@style/Widget.LexiGo.FAB</item>
+        <item name="bottomNavigationStyle">@style/Widget.LexiGo.BottomNavigation</item>
+
+        <!-- ========== SYSTEM UI ========== -->
+        <item name="android:statusBarColor">@color/primary_variant</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/surface</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+
+        <!-- ========== WINDOW ========== -->
+        <item name="android:windowBackground">@color/background</item>
+
+        <!-- ========== ACTIVITY TRANSITIONS ========== -->
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowEnterTransition">@android:transition/fade</item>
+        <item name="android:windowExitTransition">@android:transition/fade</item>
+        <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+        <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+        
+        <!-- Activity Open/Close Animations -->
+        <item name="android:windowAnimationStyle">@style/WindowAnimationStyle.LexiGo</item>
+    </style>
+
+    <!-- Main Theme -->
+    <style name="Theme.LexiGo" parent="Base.Theme.LexiGo" />
+
+    <!-- ============================================
+         SHAPE APPEARANCES
+         ============================================ -->
+
+    <style name="ShapeAppearance.LexiGo.TopRounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">@dimen/radius_xl</item>
+        <item name="cornerSizeTopRight">@dimen/radius_xl</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+    <style name="ShapeAppearance.LexiGo.BottomRounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeBottomLeft">@dimen/radius_xl</item>
+        <item name="cornerSizeBottomRight">@dimen/radius_xl</item>
+    </style>
+
+    <style name="ShapeAppearance.LexiGo.AllRounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/radius_lg</item>
+    </style>
+
+    <style name="ShapeAppearance.LexiGo.Circle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <!-- ============================================
+         SPECIALIZED THEMES
+         ============================================ -->
+
+    <!-- Splash/Welcome Theme -->
+    <style name="Theme.LexiGo.Splash" parent="Theme.LexiGo">
+        <item name="android:windowBackground">@drawable/bg_gradient_primary</item>
+        <item name="android:statusBarColor">@color/primary</item>
+    </style>
+
+    <!-- Auth Theme (Login/Register) -->
+    <style name="Theme.LexiGo.Auth" parent="Theme.LexiGo">
+        <item name="android:statusBarColor">@color/primary</item>
+    </style>
+
+    <!-- Fullscreen Theme -->
+    <style name="Theme.LexiGo.Fullscreen" parent="Theme.LexiGo">
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <!-- Dialog Theme -->
+    <style name="Theme.LexiGo.Dialog" parent="ThemeOverlay.Material3.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="dialogCornerRadius">@dimen/radius_xl</item>
+        <item name="android:fontFamily">@font/font_nunito</item>
+    </style>
+
+    <!-- Bottom Sheet Theme -->
+    <style name="Theme.LexiGo.BottomSheet" parent="ThemeOverlay.Material3.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget.LexiGo.BottomSheet</item>
+        <item name="android:fontFamily">@font/font_nunito</item>
+    </style>
+
+    <style name="Widget.LexiGo.BottomSheet" parent="Widget.Material3.BottomSheet">
+        <item name="shapeAppearance">@style/ShapeAppearance.LexiGo.TopRounded</item>
+        <item name="backgroundTint">@color/surface</item>
+    </style>
+</resources>

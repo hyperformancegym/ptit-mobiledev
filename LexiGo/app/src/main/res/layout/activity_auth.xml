@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface"
+    tools:context=".activities.AuthActivity">
+
+    <!-- Header với màu primary -->
+    <View
+        android:id="@+id/headerBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/primary"
+        app:layout_constraintBottom_toTopOf="@id/guideline15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!-- Title chào mừng -->
+    <TextView
+        android:id="@+id/welcomeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chào mừng bạn!"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/nunito_bold"
+        android:textColor="@color/on_primary"
+        app:layout_constraintBottom_toBottomOf="@id/headerBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/headerBackground"/>
+
+    <!-- Guideline at 15% -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15"/>
+
+    <!-- Content Card Section -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/contentCard"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardCornerRadius="@dimen/radius_xxl"
+        app:cardElevation="@dimen/elevation_lg"
+        app:cardBackgroundColor="@color/surface"
+        app:strokeWidth="0dp"
+        android:layout_marginHorizontal="@dimen/spacing_md"
+        android:layout_marginTop="-24dp"
+        android:layout_marginBottom="@dimen/spacing_md"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline15">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Custom Tab Layout -->
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_lg"
+                android:layout_marginTop="@dimen/spacing_lg"
+                android:background="@drawable/bg_tab_container"
+                android:padding="@dimen/spacing_xxs"
+                app:tabBackground="@drawable/selector_tab_background"
+                app:tabIndicator="@null"
+                app:tabIndicatorHeight="0dp"
+                app:tabSelectedTextColor="@color/primary"
+                app:tabTextColor="@color/text_secondary"
+                app:tabTextAppearance="@style/TextAppearance.LexiGo.Tab"
+                app:tabRippleColor="@android:color/transparent"
+                app:tabMode="fixed"
+                app:tabGravity="fill"/>
+
+            <!-- ViewPager for fragments -->
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/spacing_sm"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
